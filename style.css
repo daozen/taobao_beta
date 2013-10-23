@@ -352,10 +352,10 @@ span {
 /*sidebar*/
 
 .topsidebar {
-    float: right;
+    float: left;
     display: inline;
     width: 300px;
-    margin-left: -300px;
+    margin: -300px;
     margin-top: 10px;
     position: relative;
 }
@@ -454,11 +454,13 @@ span {
 .meta_top div div {
     float: left;
     margin-left: 5px;
+    display: inline;
+    height: 100%;
 }
 
 .meta_top div div a {
     border: 1px solid #fdb18f;
-    display: block;
+    display: inline-block;
     background-color: #fff0e8;
     height: 28px;
     padding: 0 3px;
@@ -480,17 +482,18 @@ a.avatar p{
 .meta_bottom{
     margin-top: 20px;
     float: right;
+    display: inline;
 }
 
 .meta_bottom div {
     float: left;
     margin-left: 5px;
     display: inline;
-    overflow: hidden;
 }
 
 .meta_bottom div a {
-    display: block;
+    float: left;
+    display: inline;
     width: 73px;
     height: 33px;
     line-height: 33px;
@@ -514,6 +517,7 @@ a.avatar p{
 .service {
     background-color: #f4f4f4;
     padding: 20px 0 20px 16px;
+    height: 100%;
 }
 
 .service li {
