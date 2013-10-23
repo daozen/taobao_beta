@@ -314,7 +314,6 @@ span {
     margin-top: 10px;
 }
 #main {
-    margin-right: 310px;
     float: left;
 }
 
@@ -329,6 +328,8 @@ span {
 
 #slideL {
     width: 520px;
+    float: left;
+    display: inline;
 }
 #slideL div {
     display: block;
