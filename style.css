@@ -317,11 +317,6 @@ span {
     float: left;
 }
 
-#sidebar {
-    float: left;
-    width: 300px;
-}
-
 /*slide*/
 
 
@@ -357,7 +352,8 @@ span {
 /*sidebar*/
 
 #topsidebar {
-    float: left;
+    float: right;
+    display: inline;
     width: 300px;
     margin-left: -300px;
     margin-top: 10px;
@@ -372,9 +368,9 @@ span {
 
 
 
-#meta_tab>ul>li {
+#metahd ul li {
     float: left;
-    display: block;
+    display: inline;
     width: 59px;
     height: 26px;
     line-height: 26px;
@@ -383,14 +379,14 @@ span {
     border-bottom: 1px solid #dedede;
     background-color: #f7f7f7;
 }
-#meta_tab>ul>li.active {
+#metahd ul li.active {
     border-bottom: none;
     background-color: #fff;
     border-right: 1px solid #dedede;
     font-weight: bolder;
 }
-#meta_tab>ul>li a {
-    display: block;
+#metahd ul li a {
+    display: inline;
     height: 26px;
     line-height: 26px;
 }
@@ -432,6 +428,7 @@ span {
     padding: 13px 19px;
     border: 1px solid #dedede;
     background: #ffffff url("images/metabg.png") no-repeat top right;
+    height: 110px;
 }
 
 #member_meta #meta_top {
@@ -487,7 +484,8 @@ a.avatar p{
 #meta_bottom div {
     float: left;
     margin-left: 5px;
-
+    display: inline;
+    overflow: hidden;
 }
 
 #meta_bottom div a {
@@ -679,14 +677,14 @@ a.avatar p{
     margin-bottom: 25px;
 }
 
-#middle_map>div {
+.map_mod {
     float: left;
     width: 23%;
     border-left: 1px solid #dedede;
     padding: 0 10px;
 }
 
-#middle_map>div:first-child {
+#mod1 {
     border-left: none;
 }
 
@@ -694,7 +692,7 @@ a.avatar p{
     width: 80px;
     height: 20px;
     text-indent: -9999px;
-    margin: 5px 15px;
+    margin: 5px 5px;
 }
 
 #mod1 .mod_hd {
@@ -713,13 +711,12 @@ a.avatar p{
     background-position: -100px -60px;
 }
 
-#middle_map>div li {
+.map_mod li {
     float: left;
-
     width: 25%;
 }
 
-#middle_map>div li a {
+.map_mod li a {
     padding: 6px 8px;
     display: inline;
     margin: 0 2px;
@@ -727,7 +724,7 @@ a.avatar p{
     line-height: 26px;
 }
 
-#middle_map>div li a:hover {
+#middle_map div li a:hover {
     color: #f8f8f8;
 }
 
@@ -757,12 +754,12 @@ a.avatar p{
     border-bottom: none;
 }
 
-#middle_main>div+div {
+.marketbox {
     width: 50%;
     float: left;
 }
 
-#middle_main>div+div>div {
+.marketwrap {
     position: relative;
     margin-left: -1px;
     margin-top: -1px;
@@ -770,29 +767,29 @@ a.avatar p{
     border: 1px solid #eeeeee;
 }
 
-#middle_main>div+div>div:hover {
+.marketwrap:hover {
     border: 1px solid #ff561a;
     position: relative;
     z-index: 2;
 }
 
-#middle_main>div>div>div {
+.market {
     padding: 20px 6%;
 }
 
-#middle_main>div>div>div>div {
+.marketL,.marketR {
     float: left;
     width: 50%;
 }
 
 
-#middle_main>div>div h4 {
+.market h4 {
     display: block;
     margin-bottom: 14px;
 
 }
 
-#middle_main>div>div h4 a {
+.market h4 a {
     font-size: 14px;
     font-weight: bold;
     padding-left: 10px;
@@ -838,6 +835,7 @@ a.avatar p{
 
 .mod_text {
     margin: auto;
+    overflow: hidden;
 }
 
 .mod_text a{
@@ -848,20 +846,21 @@ a.avatar p{
     float: left;
 }
 
-.mod_text a+a {
+.mod_text a {
     border-left: 1px solid #e5e5e5;
+    margin-left: -1px;
 }
 
-.two_row>div {
+.two_row .wrap {
     overflow: hidden;
 }
 
-.two_row>div>a img {
+.two_row .wrap a.wrap img {
     float: right;
     
 }
 
-.two_row>div>a {
+.two_row div a {
     display: block;
     padding: 12px 0;
     border-left: 1px dashed #eee;
@@ -870,22 +869,22 @@ a.avatar p{
     height: 50%;
 }
 
-.two_row>div:first-child>a {
-    border-top: none;
+.firstrow a {
+    border-top: none!important;
 }
 
-.two_row>div>a>p {
+.two_row .wrap a p {
     padding: 20px 0 0 15px;
 }
 
-.twtc>a {
+.twtc a {
     float: left;
     margin-bottom: 16px;
     text-align: center;
     width: 50%;
 }
 
-.twtc>a img {
+.twtc a img {
     margin: 0px auto 5px auto;
 
 }
@@ -987,7 +986,7 @@ a.avatar p{
     width: 200px;
 }
 
-.recmdhd>p {
+div.tips+p {
     margin: 20px 0 3px 0;
     font-size: 14px;
     }
@@ -1203,6 +1202,14 @@ a.avatar p{
     margin-top: 35px;
 }
 
+.danpinitem a p {
+    color: #3c3c3c;
+}
+
+.danpinitem a:hover p {
+    color: #f22f02;
+}
+
 .danpinitem .cost {
     color: #fa5705;
     font-weight: bold;
@@ -1224,15 +1231,15 @@ a.avatar p{
     
 }
 
-.danpinitem>p {
+.danpinitem p {
     clear: both;
     color: #9c9c9c;
 }
-.danpinitem>p>em {
+.danpinitem p em {
     text-decoration: line-through;
 }
 
-.danpinitem>p>span {
+.danpinitem p span {
     margin: 0 5px;
 }
 
@@ -1244,12 +1251,11 @@ a.avatar p{
     
 }
 
-#faq>div {
+#faqwrap {
     overflow: hidden;
-
 }
 
-#faq>div>div {
+.faqctwrap {
     width: 25%;
     float: left;
     border-left: 1px solid #e5e5e5;
@@ -1268,7 +1274,7 @@ a.avatar p{
     color: #9d9d9d;
     margin: 5px 10px 0 0;
 }
-#faq>div>div>div {
+#faq .wrap {
     padding: 10px 24px 5px 24px;
 }
 
