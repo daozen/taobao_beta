@@ -162,6 +162,7 @@ span {
     height: 39px;
     width: 675px;
     float: left;
+    overflow: hidden;
 }
 #select_tap {
     float: left;
@@ -182,17 +183,18 @@ span {
 #search_input {
     width: 506px;
     float: left;
+    overflow: hidden;
 }
 
 #search_input input {
     border: none;
-    padding: 10px 0;
+    height: 41px;
+    margin-top: -1px;
     width: 100%;
 }
 #search_button {
     float: left;
     width: 95px;
-    *width: 91px;
 }
 
 
@@ -270,6 +272,7 @@ span {
 
 .nav_hd,.nav_bd {
     float: left;
+    height: 100%;
 }
 
 .nav_hd li,.nav_bd li{
@@ -295,6 +298,10 @@ span {
     display: inline-block;
     height: 28px;
     line-height: 28px;
+}
+
+.nav_hd li a:hover,.nav_bd li a:hover {
+    background-color: #f7f7f7;
 }
 
 .nav_hd a {
@@ -427,6 +434,7 @@ span {
 
 .member_meta {
     padding: 13px 19px;
+    *padding: 10px 15px;
     border: 1px solid #dedede;
     background: #ffffff url("images/metabg.png") no-repeat top right;
     height: 110px;
@@ -437,9 +445,7 @@ span {
 
 }
 
-.member_meta .meta_bottom {
-    clear: both;
-}
+
 
 .member_meta .meta_top a {
     position:relative;
@@ -481,14 +487,19 @@ a.avatar p{
 
 .meta_bottom{
     margin-top: 20px;
-    float: right;
     display: inline;
+    clear: both;
+    float: right;
+    *float: none;
+    *display: block;
+    *margin: 10px 0 0 18px;
 }
 
+
 .meta_bottom div {
-    float: left;
     margin-left: 5px;
-    display: inline;
+    display: block;
+    float: left;
 }
 
 .meta_bottom div a {
@@ -512,6 +523,7 @@ a.avatar p{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-right: 2px;
+    color: #fdfdfd;
 }
 
 .service {
@@ -759,15 +771,20 @@ a.avatar p{
 
 .marketbox {
     width: 50%;
+    *width: 393px;/*to fix*/
     float: left;
+    display: inline;
 }
 
 .marketwrap {
     position: relative;
+    display: block;
     margin-left: -1px;
     margin-top: -1px;
     height: 268px;
     border: 1px solid #eeeeee;
+    overflow: hidden;
+    width: 100%;
 }
 
 .marketwrap:hover {
@@ -883,6 +900,8 @@ a.avatar p{
     margin-bottom: 16px;
     text-align: center;
     width: 50%;
+    *width:49%; /*to fix*/
+    display: inline;
 }
 
 .twtc a img {
@@ -894,13 +913,14 @@ a.avatar p{
     border: 1px dashed #eee;
     height: 78px;
     border-bottom: none;
-
+    clear: both;
 }
 
 .m_textbox a {
     display: block;
     float: left;
     width: 50%;
+    *width:49%;
     height: 39px;
     line-height:39px;
     text-align: center;
@@ -1125,7 +1145,8 @@ div.tips+p {
 
 .jxtext div {
     width: 49%;
-    display: inline-block;
+    float: left;
+    display: inline;
     margin: 5px 0 5px 0;
 }
 
@@ -1141,7 +1162,12 @@ div.tips+p {
 .paihang {
     text-align: center;
 }
-.paihang * {
+.paihang div {
+    display: block;
+    clear: both;
+}
+
+.paihang div * {
     float: left;
 }
 
@@ -1296,6 +1322,7 @@ div.tips+p {
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 0 10px 0;
     overflow: hidden;
+    height: 100%;
 }
 
 #fdlink li {
@@ -1323,6 +1350,7 @@ div.tips+p {
 
 #foot2 {
     overflow: hidden;
+    clear: both;
 }
 
 #foot2 p{
