@@ -74,6 +74,7 @@ span {
     color: #bcbcbc;
 }
 
+
 /*Top Navi Bar*/
 
 #top_SiteNavWrap {
@@ -116,17 +117,19 @@ span {
 #main_Wrap {
     margin: 30px auto 0 auto;
     width: 1190px;
+    zoom: 1;
 }
 
 .head {
     position: relative;
-    *position: static;
     margin-bottom: 30px;
 }
 
 #searchwrap {
     float: left;
     width: 100%;
+    zoom: 1;
+    position: relative;
 }
 
 #search {
@@ -136,8 +139,8 @@ span {
 .logo {
     float: left;
     margin-left: -100%;
+    _margin-left: -1190px;
     display: inline;
-    filter:;/*负边距*/
 }
 
 .logo a {
@@ -150,6 +153,7 @@ span {
 
 #search {
     position: relative;
+    zoom: 1;
 }
 .searchbar {
     border: 3px solid #ff5011;
@@ -208,7 +212,7 @@ span {
     position: absolute;
     right: 0;
     top: 3px;
-    *right: 225px;
+
 }
 
 .hot_tips {
@@ -224,7 +228,7 @@ span {
 
 .qcode {
     position: absolute;
-    right: 0px;
+    right: 0;
     margin-top: -20px;
     border: 1px solid #e5e5e5;
     text-align: center;
@@ -259,6 +263,7 @@ span {
 .top_wrap {
     float: left;
     width: 100%;
+    zoom: 1;
 }
 
 .top_wrap .top_content {
@@ -273,11 +278,14 @@ span {
 .nav_hd,.nav_bd {
     float: left;
     height: 100%;
+    overflow: hidden;
+    display: block;
+    *padding-bottom: 6px;
 }
 
 .nav_hd li,.nav_bd li{
     float: left;
-    display: block;
+    display: inline;
     margin: 6px 10px;
     font-size: 14px;
     padding: 0 3px 0 3px;
@@ -402,6 +410,7 @@ span {
     vertical-align:middle;
     padding-left: 20px;
     padding-top: 15px;
+    height: 56px;
 }
 
 .meta_content div {
@@ -553,9 +562,10 @@ a.avatar p{
 /*sidecata*/
 #side_cata {
     width: 150px;
-    margin-left: -100%;
+    margin-left: -1190px;
     float: left;
     overflow: hidden;
+    filter:;
 }
 
 #side_cata a {
@@ -563,7 +573,7 @@ a.avatar p{
     font-weight: 400;
     display: block;
     width: 100%;
-    font-family: tahoma,arial,Microsoft Yahei,'宋体';
+    font-family: tahoma,arial,Microsoft Yahei;
 }
 
 #side_cata div a{
